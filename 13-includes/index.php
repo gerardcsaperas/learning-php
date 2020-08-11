@@ -9,6 +9,8 @@
     include_once 'components/header.php';
     echo "<h1>This comes from index.php</h1>";
     include_once 'components/footer.php';
+
     
+// We can also use require and require_once (more strict)
 ?>
 
