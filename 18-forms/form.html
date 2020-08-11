@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>HTML Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="receive_data.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" autofocus pattern="[A-Za-z]+" required placeholder="John"/>
+            
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" pattern="[A-Za-z ]+" required placeholder="Doe"/>
+            
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
