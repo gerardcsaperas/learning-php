@@ -19,7 +19,18 @@
         
         ?>
         
-        <?= "<p>Echoes out your code automatically.</p>" ?>
+        <?= "<p>Echoes out your code automatically.</p>"?>
+        
+        <?php
+        
+            // This is a single-line PHP comment
+        
+            /* This is a 
+             * multiline
+             * PHP comment
+             */
+        
+        ?>
     </body>
 </html>
 <?php
