@@ -13,3 +13,21 @@ function loremPrint() {
 }
 
 echo loremPrint();
+
+// Variable functions
+function goodMorning() {
+    return "Good morning";
+}
+
+function goodEvening() {
+    return "Good evening";
+}
+
+/*
+ * $goodWhat = $_GET['good'];
+ */
+
+$goodWhat = 'goodMorning';
+
+echo $goodWhat();
+
