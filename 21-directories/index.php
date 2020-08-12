@@ -16,8 +16,13 @@ mkdir('new_folder', 077) or die("Can't create folder");
 //    echo "<p>The folder doesn't exists</p>";
 // }
 
+
+echo '<h1>/new_folder</h1>';
 if($manager = opendir('./new_folder')) {
-    while (false !== ($file = readdir('$manager'))) {
-        echo $file;
+    while (false !== ($file = readdir($manager))) {
+        if ($file !== '.' && $file !== '..') {
+            echo $file;
+            echo "<br>";
+        }
     }
 }
