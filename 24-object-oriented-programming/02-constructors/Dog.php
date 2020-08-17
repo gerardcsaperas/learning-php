@@ -13,12 +13,19 @@ class Dog {
     //         inside classes that inherit this class or outside this class
     public $color;
     
-    // PROTECTED: We can access it from the class that defines them and objects
-    //            that inherit this class
+    // PROTECTED: You need a set method in order to modify it
     protected $name;
     
-    // PRIVATE: Only accessible from this class
+    // PRIVATE: You need a set method in order to modify it
+    //          and a get method in order to see it.
     private $breed;
+    
+    // Constructor
+    public function __construct($name, $color, $breed) {
+        $this->name = $name;
+        $this->color = $color;
+        $this->breed = $breed;
+    }
     
     // Methods (actions that the object can do)
     public function bark() {
@@ -43,8 +50,3 @@ class Dog {
     }
     
 } // End of class definition
-
-// Create an object (or instantiate class)
-$dog = new Dog();
-
-$dog->bark();

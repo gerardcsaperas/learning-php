@@ -1,6 +1,6 @@
 # Master in PHP
 
-This repository contains introductory level exercises for PHP.
+This repository contains PHP concepts.
 
 It also contains explanations, tips, etc.
 
