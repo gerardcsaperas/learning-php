@@ -49,4 +49,13 @@ class Dog {
         return $this->breed;
     }
     
+    public function showInfo() {
+        $info = "<h1>Dog Info: </h1>";
+        $info .= "<br>Name: " . $this->name;
+        $info .= "<br>Color: " . $this->color;
+        $info .= "<br>Breed: " . $this->breed;
+        
+        return $info;
+    }
+    
 } // End of class definition

@@ -7,4 +7,4 @@ $dog = new Dog('Yes', 'Brown', 'Unknown');
 
 $dog->color = 'Brown';
 
-var_dump($dog);
+echo $dog->showInfo();
