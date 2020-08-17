@@ -9,7 +9,6 @@ class User {
         echo "<h1>$this->name constructed</h1>";
     }
 
-    
     function __destruct() {
         echo "<h1>$this->name destructed</h1>";
     }
